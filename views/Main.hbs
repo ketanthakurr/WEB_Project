@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Ticket Please</title>
+    <link rel="stylesheet" href="/static/css/Main.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jost&family=Prata&family=Raleway&family=Satisfy&family=Tiro+Devanagari+Hindi:ital@1&display=swap');
+        
+    </style>
+
+</head>
+<body>
+    
+    <div class="mainBG">
+
+        <h1 class="welcome">Hi.Hola.<span class="hindi">नमस्ते</span></h1>
+        
+        <img src="/static/images/bgbanner.jpeg" class="banner" alt="">
+        <div class="image-container">
+            <div class="image-head" id="heading">
+                <H3 class="heading">Featured from the blog</H3>
+            </div>
+            <div class="image-card">
+                <a href="/budget">
+                    <div class="parent1">
+                    <img src="/static/images/destination1.jpeg" class="image1" alt="destination">
+                    <img src="/static/images/destination1.jpeg" class="image-overlap" id="image2" alt="destination">
+                    <h5 class="card-title" id="title1">Budget friendly places to visit</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="image-card">
+                <div class="parent2">
+                    <img src="/static/images/destination2.jpeg" class="image1" alt="destination">
+                    <img src="/static/images/destination2.jpeg" class="image-overlap" id="image3" alt="destination">
+                    <h5 class="card-title" id="title2">Travel - bucket list</h5>
+                </div>
+            </div>
+        </div>
+        <p class="divider-end"> <hr> <hr> <hr></p>
+
+        <p class="divider-start"><hr><hr><hr></p>
+        <div class="image-container2">
+            <div class="image-card">
+                <div class="parent1">
+                    <img src="/static/images/destination3.jpeg" class="image1" alt="destination">
+                    <img src="/static/images/destination3.jpeg" class="image-overlap" id="image2" alt="destination">
+                    <h5 class="card-title" id="title3">Girl's Trip</h5>
+                </div>
+            </div>
+            <div class="image-card">
+                <div class="parent2">
+                    <img src="/static/images/destination4.jpeg" class="image1" alt="disney">
+                    <img src="/static/images/destination4.jpeg" class="image-overlap" id="image3" alt="disney">
+                    <h5 class="card-title" id="title4">African Safari</h5>
+                </div>
+            </div>
+            <div class="image-head" id="heading">
+                <H3 class="heading">Bucket <br> List</H3>
+               
+            </div>
+            {{> navbar}}
+        </div>
+        {{> footer}}
+    </div>
+    <script src="/static/js/Main.js"></script>
+</body>
+</html>

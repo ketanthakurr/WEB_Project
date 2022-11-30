@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introductory Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap" rel="stylesheet" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .inputdata{
+        position: absolute;
+        top: 85.5%;
+        left: 32%;
+        height: 2.8rem;
+        width: 400px;
+        border-radius: 0.9375rem;
+        border: none;
+        background-color: rgba(198, 181, 181, 0.8);
+        padding-left: 15px ;
+        font-size: large;
+      }
+
+      #button:hover{
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background-image"></div>
+    <div class="logo"></div>
+    <div class="heading"></div>
+    <div class="headingDesc"></div>
+    <!-- <div> <input type="text" placeholder="E-mail" class="inputdata" ></div> -->
+    <!-- <button id="myButton">EXPLORE BTS</button> -->
+    <script>
+      async function loadIntroPage() {
+        let request = new Request("/static/introjson.json");
+        let response = await fetch(request);
+        let json_obj = await response.json();
+
+        loadImg(json_obj);
+        loadFullForm(json_obj);
+        loadLine(json_obj);
+        loadButton(json_obj);
+        loadButton2(json_obj);
+    }
+
+      let div1 = document.querySelector(".background-image");
+
+      function loadImg(bts_json_obj) {
+        let img = document.createElement("img");
+        img.src = bts_json_obj["image"];
+        img.style.position = "fixed";
+        img.style.left = "0";
+        img.style.top = "0px";
+        img.style.backgroundRepeat = "no-repeat";
+        img.style.width = "100%";
+        img.style.height = "70rem";
+        img.style.filter = "saturate(1.4)";
+        img.style.opacity = "70%";
+        img.style.backgroundPosition = "center center";
+        img.style.backgroundAttachment = "fixed";
+        img.style.backgroundSize = "cover";
+        div1.appendChild(img);
+    }
+    /*
+      let logo1 = document.querySelector(".logo");
+
+      function loadLogo(bts_json_obj){
+        let logo = document.createElement("logo");
+        logo.src = bts_json_obj["logo"];
+        logo.style.opacity = "100%";
+        logo.style.zIndex = "9";
+        logo.style.marginTop = "100px"
+        logo.style.position = "absolute"
+        logo1.appendChild(logo);
+      }*/
+
+      let div2 = document.querySelector(".heading");
+
+      function loadFullForm(bts_json_obj) {
+        let p = document.createElement("p");
+        p.textContent = bts_json_obj["fullform"];
+        p.style.position = "absolute";
+        p.style.width = "100%";
+        p.style.left = " 50%";
+        p.style.top = "59%";
+        p.style.zIndex = "5";
+        p.style.transform = "translate(-50%, -50%)";
+        p.style.fontFamily = "Piazzolla";
+        p.style.fontStyle = "normal";
+        p.style.fontSize = "150px";
+        p.style.textAlign = "center";
+        p.style.letterSpacing = "0.03em";
+        p.style.color = "black";
+        div2.appendChild(p);
+      }
+      let div3 = document.querySelector(".headingDesc");
+
+      function loadLine(bts_json_obj) {
+        let p = document.createElement("p");
+        p.textContent = bts_json_obj["line"];
+        div3.appendChild(p);
+        p.style.position = "absolute";
+        p.style.zIndex = "5";
+        p.style.width = "100%";
+        p.style.left = "50%";
+        p.style.top = "70%";
+        p.style.transform = "translate(-50%, -50%)";
+        p.style.fontFamily = "Oooh Baby";
+        p.style.fontStyle = "normal";
+        p.style.fontSize = "70px";
+        p.style.textAlign = "center";
+        p.style.letterSpacing = "0.03em";
+        p.style.color = "black";
+      }
+      let body = document.querySelector("body");
+      function loadButton(bts_json_obj) {
+        let button = document.createElement("button");
+        let text = document.createTextNode("SUBSCRIBE");
+        button.appendChild(text);
+        button.style.position = "absolute";
+        button.style.display = "inline-block";
+        button.style.zIndex = "5";
+        button.style.width = "11%";
+        button.style.height = "3rem";
+        button.style.left = "60%";
+        button.style.top = "88%";
+        button.style.transform = "translate(-50%, -50%)";
+        button.style.fontFamily = "Piazzolla";
+        button.style.fontStyle = "normal";
+        button.style.fontSize = "1.25rem";
+        button.style.textAlign = "center";
+        button.style.background = "rgba(198, 181, 181, 0.8)";
+        button.style.borderRadius = "0.9375rem";
+        button.style.borderStyle = "none";
+        button.style.cursor = "pointer";
+        // div3.appendChild(button);
+        body.appendChild(button);
+        button.onclick = function () {
+          location.href = "/subjson";
+        }
+      }
+      
+        function loadButton2(bts_json_obj) {
+          let button2 = document.createElement("button");
+          let text = document.createTextNode("EXPLORE");
+          button2.appendChild(text);
+          button2.style.position = "absolute";
+          button2.style.display = "inline-block";
+          button2.style.zIndex = "5";
+          button2.style.width = "11%";
+          button2.style.height = "3rem";
+          button2.style.left = "40%";
+          button2.style.top = "88%";
+          button2.style.transform = "translate(-50%, -50%)";
+          button2.style.fontFamily = "Piazzolla";
+          button2.style.fontStyle = "normal";
+          button2.style.fontSize = "1.25rem";
+          button2.style.textAlign = "center";
+          button2.style.background = "rgba(198, 181, 181, 0.8)";
+          button2.style.borderRadius = "0.9375rem";
+          button2.style.borderStyle = "none";
+          button2.style.cursor = "pointer";
+          // div3.appendChild(button);
+          body.appendChild(button2);
+          button2.onclick = function () {
+            location.href = "/main";
+          }
+        }
+      loadIntroPage();
+    </script>
+  </body>
+</html>

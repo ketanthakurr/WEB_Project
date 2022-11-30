@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introductory Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap" rel="stylesheet" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .main{
+      padding:20px;
+      font-family: 'Helvetica', serif;
+      position: absolute;
+      z-index: 9;
+      }
+      .main{
+        margin-top: 200px;
+        position: absolute;
+        margin-left: 32%;
+        width: 600px;
+        background-color: white;
+        opacity: 90%;
+      }
+      .main h1{
+         font-size: 40px;
+         text-align:center;
+         font-family: 'Helvetica', serif;
+      }
+      input{
+         font-family: 'Helvetica', serif;
+         width: 565px;
+         font-size: 20px;
+         padding: 12px 20px;
+         margin: 8px 0;
+         border: none;
+         border-bottom: 2px solid #4CAF50;
+      }
+      input[type=submit] {
+         font-family: 'Helvetica', serif;
+         width: 100%;
+         background-color: #4CAF50;
+         border: none;
+         color: white;
+         padding: 16px 32px;
+         margin: 4px 2px;
+         border-radius: 10px;
+      }
+      .registerbtn {
+         background-color: #4CAF50;
+         color: white;
+         padding: 16px 20px;
+         margin: 8px 0;
+         border: none;
+         cursor: pointer;
+         width: 100%;
+         opacity: 0.9;
+      }
+      .logo{
+        z-index: 9;
+        margin-left: 60px;
+        margin-top: -70px;
+        margin-bottom: 30px;
+      }
+      .inputdata{
+        position: absolute;
+        z-index: 5;
+        top: 55.5%;
+        left: 17%;
+        height: 2.8rem;
+        width: 400px;
+        border-radius: 0.9375rem;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding-left: 15px ;
+        font-size: large;
+      }
+      #phone-select{
+        position: absolute;
+        z-index: 5;
+        top: 46%;
+        left: 17%;
+        height: 2.8rem;
+        width: 90px;
+        border-radius: 0.9375rem;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding-left: 15px ;
+        font-size: large;
+      }
+      #a{
+        top: 30%;
+      }
+      #b{
+        top: 38%;
+      }
+      #c{
+        top: 46%;
+        width: 280px;
+        left: 23%;
+      }
+      #d{
+        top: 54%;
+      }
+      .background-img{
+        opacity: 20%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background-image">
+    </div>
+
+    <div class="main">
+      <form action="/subscribe" method="post">
+      <img src="/static/images/logofinal.png" class="logo" alt="">
+      <input type="text" class="box" name="name" id="name" placeholder="Name" required/><br>
+      <input type="text" class="box" name="phone" id="phone" placeholder="Phone Number" required/><br>
+      <input type="email" class="box" name="email" id="email" placeholder="E-mail" required/><br>
+      <input type="submit" class="sub-btn" name="submitDetails" id="submitDetails" value="SUBSCRIBE" required/><br>
+      </form>
+    </div>
+
+
+    <script>
+      async function loadIntroPage() {
+        let request = new Request("/static/subjson.json");
+        let response = await fetch(request);
+        let json_obj = await response.json();
+
+        loadImg(json_obj);
+        loadButton2(json_obj);
+    }
+    
+      let div1 = document.querySelector(".background-image");
+
+      function loadImg(bts_json_obj) {
+        let img = document.createElement("img");
+        img.src = bts_json_obj["image"];
+        img.style.position = "fixed";
+        img.style.left = "0";
+        img.style.top = "0px";
+        img.style.backgroundRepeat = "no-repeat";
+        img.style.width = "100%";
+        img.style.height = "70rem";
+        img.style.filter = "saturate(1.4)";
+        img.style.opacity = "70%";
+        img.style.backgroundPosition = "center center";
+        img.style.backgroundAttachment = "fixed";
+        img.style.backgroundSize = "cover";
+        div1.appendChild(img);
+    }
+
+
+      loadIntroPage();
+    </script>
+  </body>
+</html>
