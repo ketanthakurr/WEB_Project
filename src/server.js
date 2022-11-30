@@ -21,9 +21,9 @@ mongoose.connect(DB, {
 }).catch((err) => console.log('No Connection'));
 
 
-// mongoose.connect("mongodb://localhost:27017/ThreeTicketPlease", () => {
-//     console.log("database connected")
-// })
+mongoose.connect("mongodb://localhost:27017/ThreeTicketPlease", () => {
+    console.log("database connected")
+})
 app.listen(process.env.PORT | 6969, () => {
     console.log("server started")
 })
