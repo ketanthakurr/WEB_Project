@@ -10,3 +10,23 @@ window.onscroll = () => {
         navbar.classList.remove('navbar-scroll');
     }
 };;
+
+function openPage(){
+    var x = document.getElementById("search").value;
+
+    if(x === "greece"){
+        window.open("/greece")
+    }
+    if(x === "india"){
+        window.open("/india")
+    }
+    if(x === "korea"){
+        window.open("/korea")
+    }
+    if(x === "travel"){
+        window.open("/travel")
+    }
+    if(x === "budget"){
+        window.open("/budget")
+    }
+}

@@ -1,6 +1,7 @@
 *{
     padding: 0%;
     margin: 0%;
+    ;
     /* overflow-x: hidden; */
 }
 
@@ -21,29 +22,10 @@ body::-webkit-scrollbar-thumb {
 .mainBG{
     width: 99.5vw;
     height: 3000px;
-    background-image: linear-gradient(to right, rgb(249, 255, 224),rgb(252, 212, 248));
-
+    background-color: bisque;
     overflow-x: hidden;
 }
 
-.welcome{
-    font-family: Jost;
-    position: absolute;
-    font-size: 120px;
-    padding-left: 580px;
-    padding-top: 260px;
-    z-index: 9;
-}
-
-.hindi{
-    font-family: 'Tiro Devanagari Hindi';
-}
-
-.banner{
-    width: 100%;
-    opacity: 50%;
-    height: 500px;
-}
 
 .navbar{
     position: fixed;
@@ -132,183 +114,11 @@ a{
     
 }
 
-#heading{
-    background: transparent;
-    margin-top: -40px;
-    padding-right: 50px;
-    text-align: center;
-}
-
-.image-container{
-    position: relative;
-    width: 96.85%;
-    margin: auto;
-    height: 520px;
-    display: flex;
-    margin-top: 150px;
-    margin-bottom: 100px;
-    margin-left: -40px ;
-    justify-content: space-between;
-    padding-right: 100px;
-    background-color: rgb(0, 0, 0);
-    /* opacity: 45%; */
-    /* border-radius: 20px; */
-}
-
-.card2{
-    margin-left: -150px;
-    margin-right: 50px;
-}
-
-.image-container2{
-    position: relative;
-    width: 96.85%;
-    margin: auto;
-    height: 520px;
-    display: flex;
-    margin-top: 100px;
-    margin-bottom: 20px;
-    justify-content: space-between;
-    padding-left: 100px;
-    background-color: rgb(0, 0, 0);
-    overflow-x: hidden;
-    /* border-radius: 20px; */
-}
-
-.image-card{
-    position: relative;
-    min-width: calc(100%/5 - 10px);
-    width: calc(100%/4.0 - 10px);
-    height: 80%;
-    margin-top: 53px;
-    border-radius: 15px;
-    overflow: hidden;
-    background: whitesmoke;
-    transition: transform .4s;
-}
-
-.image-card2{
-    position: relative;
-    min-width: calc(100%/5 - 10px);
-    width: calc(100%/3.6 - 10px);
-    height: 80%;
-    margin-top: 53px;
-    border-radius: 5px;
-    overflow: hidden;
-    background: #030b17;
-    transition: transform .4s;
-}
-
-.parent1{
-    position: relative;
-}
-
-.parent2{
-    position: relative;
-}
-
-.image-card:hover{
-    transform: scale(1.1);
-}
-.image-card2:hover{
-    transform: scale(1.1);
-}
-
-.card-title{
-    margin-top: 380px;
-    color: black;
-    font-family: 'Jost', sans-serif;
-    font-size: 18px;
-    text-transform: uppercase;
-    position: absolute;
-}
-
-#title1{
-    margin-left: 16%;
-}
-#title2{
-    margin-left: 29%;
-    /* width: auto; */
-}
-#title3{
-    margin-left: 38%;
-}
-#title4{
-    margin-left: 32%;
-}
-/* 
-.card-title2{
-    margin-top: 420px;
-    color: white;
-    margin-left: 115px;
-    font-family: 'Jost', sans-serif;
-    font-size: 18px;
-    text-transform: uppercase;
-    position: absolute;
-} */
-
-.heading{
-    color: white;
-    font-size: 70px;
-    width: 400px;
-    font-style: italic;
-    font-family: 'Prata', serif;
-    margin-top: 150px;
-    margin-left: 150px;
-    /* z-index: 1; */
-
-}
-.heading2{
-    color: white;
-    font-size: 70px;
-    width: 400px;
-    font-style: italic;
-    font-family: 'Prata', serif;
-    margin-top: 200px;
-    margin-right: 150px;
-    /* z-index: 1; */
-
-}
-
-.flower{
-    /* margin-top: 140px; */
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    opacity: 0.5;
-}
-
-.image1{
-    position: absolute;
-    width: 100%;
-    height: 470px;
-    opacity: 0.3;
-}
-
-.image-overlap{
-    position: absolute;
-    width: 425px;
-    margin-left: 4.5%;
-    margin-top: 20px;
-}
-
-#image2{
-    width:  91%;
-    height: 350px;
-}
-#image3{
-    width:  91%;
-    height: 350px;
-}
-
-.divider-start{
-    margin-top: 200px;
-}
-
 .about-me{
     background-color: rgb(26, 25, 25);
     height: 515px;
     overflow-x: hidden;
+    margin-top: 5110px;
     /* text-align: center; */
 }
 
@@ -318,22 +128,16 @@ a{
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
-    max-width: 800px;
+    /* background-color: black; */
+    max-width: 2000px;
+    height: 300px;
     text-align: center;
-    margin-top: 2900px;
+    margin-top: 5000px;
+    /* margin-bottom: -100px; */
     /* padding-left: 600px; */
     /* overflow-x: hidden; */
     /* padding-left: 700px; */
 }
-
-
-.about-content{
-    color: white;
-    padding-left: 80px;
-    font-size: 20px;
-    font-family: Jost;
-}
-
 
 .btn-title{
     color: white;
@@ -366,6 +170,9 @@ a{
     overflow: hidden;
     position: relative;
     color: #42d2ff;
+}
+.about-container{
+    width: 100%;
 }
 
 .about-container .btn i {
@@ -437,8 +244,9 @@ a{
 }
 
 .about-content{
-    color: white;
+    color: black;
     padding-left: 80px;
+    width: 700px;
     font-size: 20px;
     font-family: Jost;
 }
@@ -500,78 +308,4 @@ a{
     list-style: none;
     text-decoration: none;
     color: white; 
-}
-
-
-.caraousel-container{
-    position: relative;
-    width: 100%;
-    height: 600px;
-    padding: 20px 0;
-    overflow-x: hidden;
-    margin-top: 50px;
-    margin-bottom: -130px;
-}
-
-.carousel{
-    display: flex;
-    width: 92%;
-    height: 100%;
-    position: relative;
-    margin: auto;
-}
-
-
-.slider{
-    flex: 0 0 auto;
-    margin-right: 30px;
-    position: relative;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    transition: 1s;
-    overflow: hidden;
-}
-
-.slider-img{
-    width: 80%;
-   height: 100%;
-    object-fit: cover;
-    display: block;
-    margin-left: auto;
-}
-
-.slide-content{
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    z-index: 2;
-    background: linear-gradient(to right, #030b17 65% , #0c111b00, transparent);
-    color: white;
-    top: 0  ;
-}
-
-
-.movie-title{
-    padding-left: 50px;
-    text-transform: capitalize;
-    margin-top: 80px;
-}
-
-.movie-des{
-    width: 80%;
-    line-height: 30px;
-    padding-left: 50px;
-    margin-top: 30px;
-    opacity: 0.8;
-}
-
-#welcome-title{
-    font-size: 80px;
-    margin-top: 70px;
-    font-style: italic;
-    font-family: 'Prata', serif;
-    text-align: center;
 }

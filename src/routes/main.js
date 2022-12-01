@@ -1,6 +1,8 @@
 const express = require('express');
-const { route } = require('express/lib/application');
+// const { route } = require('express/lib/application');
 const routes = express.Router();
+
+
 routes.get("/", (req, res) => {
     res.render("introjson")
 })
@@ -19,11 +21,18 @@ routes.get('/india', (req, res) => {
 routes.get('/Korea', (req, res) => {
     res.render("Korea")
 })
-routes.get('/Travel', (req, res) => {
+routes.get('/Travel', (req, res) => { 
     res.render("Travel")
 })
 routes.get('/subjson', (req, res) => {
     res.render("subjson")
+
+})
+routes.get('/africa', (req, res) => {
+    res.render("africa") 
+})
+routes.get('/jsclasses', (req, res) => {
+    res.render("jsclasses") 
 })
 
 module.exports = routes

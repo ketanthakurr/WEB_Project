@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jungle Safari</title>
+    <link rel="stylesheet" href="/static/css/jsclasses.css">
+</head>
+<body>
+    {{> navbar}}
+
+    <div class="background-image"></div>
+    <div class="BPBS"></div>    
+    <div class="background-image2"></div>
+    <div class="text1"></div>
+    <div class="text2"></div>
+
+    <script>
+    class Main_banner {
+
+        constructor()
+        {
+          let p=document.createElement("p");
+          let p1=document.createElement("p1");
+          let h=document.createElement("h");
+          let h1=document.createElement("h1");
+          let a6=document.createElement("img");
+ 
+          let body=document.querySelector("body");
+          p1.innerHTML="AFRICAN SAFARI";
+          h1.innerHTML="Best african safari tours";
+          a6.src="/static/images/africaBanner.jpg"; 
+
+          body.append(a6);
+          body.append(p);
+          body.append(p1);
+          body.append(h);
+          body.append(h1);
+          
+
+          h1.style.position="absolute";
+          h1.style.top="1000px";
+          h1.style.left="40px";
+          h1.style.fontSize="30px";
+          h1.style.fontFamily="Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif";
+
+          p1.style.fontSize="120px";
+          p1.style.color="white";
+          p1.style.position="absolute";
+          p1.style.top="210px";
+          p1.style.left="150px";
+
+          p.style.fontSize="25px";
+          p.style.color="white";
+          p.style.position="absolute";
+          p.style.top="165px";
+          p.style.left="150px";
+          p.style.fontFamily="'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande','Lucida Sans Unicode', Geneva, Verdana, sans-serif";
+
+          a6.style.position="absolute";
+          a6.style.top="0px";
+          a6.style.left="0px";
+          // a6.style.borderRadius="15%";
+          a6.style.width="100%";
+          a6.style.height="940px"; 
+        }
+      }
+
+      class article1{
+        constructor(){
+          let q =document.createElement("q");
+          let q0 =document.createElement("q0");
+          let a=document.createElement("img");
+
+          a.src="/static/images/af1.jpg";
+
+          let body=document.querySelector("body");   
+          q.innerHTML="East Africa's Mara, Crater & Serengeti Migration";
+          q0.innerHTML="One of our best African tours, this 9-day safari kicks off in Kenya's Masai Mara before heading south into Tanzania for the Serengeti.";
+
+          body.append(q);
+          body.append(q0);
+          body.append(a);
+
+            q.style.position="absolute";
+            q.style.top="1170px";
+            q.style.left="470px";
+            q.style.width="400px";
+            q.style.fontFamily="Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";
+            q.style.fontSize="30px";
+
+            q0.style.position="absolute";
+            q0.style.top="1270px";
+            q0.style.left="470px";
+            q0.style.width="350px";
+            q0.style.fontSize="22px";
+            q0.style.fontFamily="'Cambria', Cochin, Georgia, Times, 'Times New Roman', serif";
+
+            a.style.position="absolute";
+            a.style.top="1150px";
+            a.style.left="85px";
+            a.style.borderRadius="15%";
+            a.style.width="350px";
+            a.style.height="250px";
+
+        }
+      }
+
+      class article2 {
+        constructor(){
+            let q1=document.createElement("q1");
+            let q2=document.createElement("q2");
+            let a1  =document.createElement("img");
+
+
+            let body=document.querySelector("body");
+            q1.innerHTML="Honeymoon Cape Town and Kruger";
+            q2.innerHTML="Two of South Africa's landmark destinations feature on this classic 9-day combination tour ";
+            a1.src="static/images/af2.jpg";
+
+            body.append(q1);
+            body.append(q2);
+            body.append(a1);
+
+            q1.style.position="absolute";
+            q1.style.top="1575px";
+            q1.style.left="470px";
+            q1.style.width="400px";
+            q1.style.fontFamily="Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";
+            q1.style.fontSize="30px";
+
+            q2.style.position="absolute";
+            q2.style.top="1675px";
+            q2.style.left="470px";
+            q2.style.fontSize="22px";
+            q2.style.width="350px";
+            q2.style.fontFamily="Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";
+
+            a1.style.position="absolute";
+            a1.style.top="1555px";
+            a1.style.left="85px";
+            a1.style.borderRadius="15%";
+            a1.style.width="350px";
+            a1.style.height="250px";
+
+        }
+        
+      }
+
+      class article3 {
+        constructor(){
+            let q3=document.createElement("q3");
+            let q4=document.createElement("q4");
+            let a2  =document.createElement("img");
+
+            let body=document.querySelector("body");
+            q3.innerHTML="Private Guided Botswana";
+            q4.innerHTML="Four incredible southern Africa destinations await the adventure traveller on this 14-day experiential safari: the Okavango Delta in northern Botswana, and Victoria Falls ";
+            a2.src="/static/images/af3.jpg";
+
+            body.append(q3);
+            body.append(q4);
+            body.append(a2);
+
+            q3.style.position="absolute";
+            q3.style.top="1970px";
+            q3.style.left="470px";
+            q3.style.fontSize="30px";
+            q3.style.fontFamily="Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";
+
+            q4.style.position="absolute";
+            q4.style.top="2020px";
+            q4.style.left="470px";
+            q4.style.fontSize="22px";
+            q4.style.width="350px";
+            q4.style.fontFamily="Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";
+
+            a2.style.position="absolute";
+            a2.style.top="1955px";
+            a2.style.left="85px";
+            a2.style.borderRadius="15%";
+            a2.style.width="350px";
+            a2.style.height="250px";
+
+        }
+
+    }
+
+    class article4 {
+        constructor(){
+            let q5=document.createElement("q5");
+            let q6=document.createElement("q6");
+            let a3  =document.createElement("img");
+
+            let body=document.querySelector("body");
+            q5.innerHTML="Crater, Serengeti & Mara";
+            q6.innerHTML="Combining Kenya’s Masai Mara with Tanzania’s Serengeti already promises a rewarding safari - when the Ngorongoro Crater is added to the mix.";
+            a3.src="/static/images/af4.jpg";
+
+            body.append(q5);
+            body.append(q6);
+            body.append(a3);
+
+            q5.style.position="absolute";
+            q5.style.top="1170px";
+            q5.style.left="1370px";
+            q5.style.width="400px";
+            q5.style.fontFamily="Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";
+            q5.style.fontSize="30px";
+
+            q6.style.position="absolute";
+            q6.style.top="1250px";
+            q6.style.left="1370px";
+            q6.style.width="350px";
+            q6.style.fontSize="22px";
+            q6.style.fontFamily="'Cambria', Cochin, Georgia, Times, 'Times New Roman', serif";
+
+            a3.style.position="absolute";
+            a3.style.top="1150px";
+            a3.style.left="985px";
+            a3.style.borderRadius="15%";
+            a3.style.width="350px";
+            a3.style.height="250px";
+        }
+
+    }
+
+    class article5 {
+        constructor(){
+            let q7=document.createElement("q7");
+            let q8=document.createElement("q8");
+            let a4  =document.createElement("img");
+
+            let body=document.querySelector("body");
+            q7.innerHTML="Tanzania Migration & Uganda Gorillas";
+            q8.innerHTML="Perfect for the traveller looking for an authentic safari experience, this 15-day Kenya safari and gorilla adventure focuses on special cultural encounters";
+            a4.src="/static/images/af5.jpg";
+
+            body.append(q7);
+            body.append(q8);
+            body.append(a4);
+
+            q7.style.position="absolute";
+            q7.style.top="1575px";
+            q7.style.left="1370px";
+            q7.style.width="400px";
+            q7.style.fontFamily="Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";
+            q7.style.fontSize="30px";
+
+            q8.style.position="absolute";
+            q8.style.top="1675px";
+            q8.style.left="1370px";
+            q8.style.fontSize="22px";
+            q8.style.width="350px";
+            q8.style.fontFamily="Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";
+
+            a4.style.position="absolute";
+            a4.style.top="1555px";
+            a4.style.left="985px";
+            a4.style.borderRadius="15%";
+            a4.style.width="350px";
+            a4.style.height="250px";
+
+        }
+
+    }
+
+    class article6 {
+        constructor(){
+            let q9=document.createElement("q9");
+            let q10=document.createElement("q10");
+            let a5  =document.createElement("img");
+
+
+            let body=document.querySelector("body");
+            q9.innerHTML="Sabi Sands, Cape Town ";
+            q10.innerHTML="Experience three highly diverse and rewarding destinations on this African safari tour. Start in Kenya’s flagship Masai Mara National Reserve";
+            a5.src="/static/images/af6.jpg";
+
+            body.append(q9);
+            body.append(q10);
+            body.append(a5);
+
+            q9.style.position="absolute";
+            q9.style.top="1970px";
+            q9.style.left="1370px";
+            q9.style.fontSize="30px";
+            q9.style.fontFamily="Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";
+
+            q10.style.position="absolute";
+            q10.style.top="2020px";
+            q10.style.left="1370px";
+            q10.style.fontSize="22px";
+            q10.style.width="350px";
+            q10.style.fontFamily="Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";
+
+            a5.style.position="absolute";
+            a5.style.top="1955px";
+            a5.style.left="985px";
+            a5.style.borderRadius="15%";
+            a5.style.width="350px";
+            a5.style.height="250px";
+
+        }
+
+    }
+
+      let obj1=new Main_banner();
+      let obj2 = new article1();
+      let obj3 = new article2();
+      let obj4= new article3();
+      let obj5= new article4();
+      let obj6= new article5();
+      let obj7= new article6();
+
+      </script>
+
+
+    <script>
+      async function loadIntroPage() {
+        let request = new Request("/static/africa.json");
+        let response = await fetch(request);
+        let json_obj = await response.json();
+
+        loadImg(json_obj);
+        loadFullForm(json_obj);
+        loadImg2(json_obj)
+        loadtextpara1(json_obj)
+        loadtextpara2(json_obj)
+    }
+    
+      let div1 = document.querySelector(".background-image");
+
+      function loadImg(bts_json_obj) {
+        let img = document.createElement("img");
+        img.src = bts_json_obj["image"];
+        img.style.position = "absolute  ";
+        img.style.left = "0";
+        img.style.top = "2350px";
+        img.style.backgroundRepeat = "no-repeat";
+        img.style.width = "1910px";
+        img.style.height = "50rem";
+        img.style.backgroundPosition = "center center";
+        img.style.backgroundAttachment = "fixed";
+        img.style.backgroundSize = "cover";
+        div1.appendChild(img);
+    }
+     let div2 = document.querySelector(".BPBS");
+
+      function loadFullForm(bts_json_obj) {
+        let p = document.createElement("p");
+        p.textContent = bts_json_obj["fullform"];
+        p.style.position = "absolute";
+        p.style.width = "100%";
+        p.style.left = " 50%";
+        p.style.width = "90%"
+        p.style.top = "3500px";
+        p.style.zIndex = "5";
+        p.style.transform = "translate(-50%, -50%)";
+        p.style.fontFamily = "Piazzolla";
+        p.style.fontStyle = "normal";
+        p.style.fontSize = "30px";
+        p.style.textAlign = "center";
+        p.style.letterSpacing = "0.03em";
+        p.style.color = "black";
+        div2.appendChild(p);
+      }
+
+      let div3 = document.querySelector(".background-image2");
+
+      function loadImg2(bts_json_obj) {
+        let img = document.createElement("img");
+        img.src = bts_json_obj["image1"];
+        img.style.position = "absolute  ";
+        img.style.left = "0";
+        img.style.top = "3850px";
+        img.style.backgroundRepeat = "no-repeat";
+        img.style.width = "1910px";
+        img.style.height = "40rem";
+        img.style.backgroundPosition = "center center";
+        img.style.backgroundAttachment = "fixed";
+        img.style.backgroundSize = "cover";
+        div1.appendChild(img);
+    }
+     let div4 = document.querySelector(".text1");
+
+      function loadtextpara1(bts_json_obj) {
+        let p = document.createElement("p");
+        p.textContent = bts_json_obj["text2"];
+        p.style.position = "absolute";
+        p.style.width = "100%";
+        p.style.left = " 50%";
+        p.style.width = "90%"
+        p.style.top = "4700px";
+        p.style.zIndex = "5";
+        p.style.transform = "translate(-50%, -50%)";
+        p.style.fontFamily = "Piazzolla";
+        p.style.fontStyle = "normal";
+        p.style.fontSize = "30px";
+        p.style.textAlign = "center";
+        p.style.letterSpacing = "0.03em";
+        p.style.color = "black";
+        div2.appendChild(p);
+      }
+     let div5 = document.querySelector(".text2");
+
+      function loadtextpara2(bts_json_obj) {
+        let p = document.createElement("p");
+        p.textContent = bts_json_obj["text3"];
+        p.style.position = "absolute";
+        p.style.width = "100%";
+        p.style.left = " 50%";
+        p.style.width = "90%"
+        p.style.top = "4900px";
+        p.style.zIndex = "5";
+        p.style.transform = "translate(-50%, -50%)";
+        p.style.fontFamily = "Piazzolla";
+        p.style.fontStyle = "normal";
+        p.style.fontSize = "30px";
+        p.style.textAlign = "center";
+        p.style.letterSpacing = "0.03em";
+        p.style.color = "black";
+        div2.appendChild(p);
+      }
+      loadIntroPage();
+    </script>
+
+
+
+
+    <script src="/static/js/Main.js"></script>
+    {{> footer}}
+</body>
+</html>

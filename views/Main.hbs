@@ -19,11 +19,15 @@
 
         <h1 class="welcome">Hi.Hola.<span class="hindi">नमस्ते</span></h1>
         
-        <img src="/static/images/bgbanner.jpeg" class="banner" alt="">
+        <img src="/static/images/mainBanner.jpeg" class="banner" alt="">
+        
+
         <div class="image-container">
             <div class="image-head" id="heading">
                 <H3 class="heading">Featured from the blog</H3>
             </div>
+
+
             <div class="image-card">
                 <a href="/budget">
                     <div class="parent1">
@@ -33,7 +37,7 @@
                     </div>
                 </a>
             </div>
-            <div class="image-card">
+            <div class="image-card card2">
                 <div class="parent2">
                     <img src="/static/images/destination2.jpeg" class="image1" alt="destination">
                     <img src="/static/images/destination2.jpeg" class="image-overlap" id="image3" alt="destination">
@@ -42,6 +46,21 @@
             </div>
         </div>
         <p class="divider-end"> <hr> <hr> <hr></p>
+
+    <h1 id="welcome-title">Cherished Location</h1>
+                     
+    <div class="caraousel-container">   
+        <div class="carousel">
+         <!-- <div class="slider">
+            <div class="slide-content">
+                <h1 class="movie-title">LOKI</h1>
+                <p class="movie-des">Loki is the Thors brother</p>
+            </div>
+            <img src="lokiSlider.png" class="slider-img" alt="">
+         </div> -->
+        </div>
+    </div>
+
 
         <p class="divider-start"><hr><hr><hr></p>
         <div class="image-container2">
@@ -53,14 +72,16 @@
                 </div>
             </div>
             <div class="image-card">
+                <a href="/jsclasses">
                 <div class="parent2">
                     <img src="/static/images/destination4.jpeg" class="image1" alt="disney">
                     <img src="/static/images/destination4.jpeg" class="image-overlap" id="image3" alt="disney">
                     <h5 class="card-title" id="title4">African Safari</h5>
                 </div>
+               </a>
             </div>
             <div class="image-head" id="heading">
-                <H3 class="heading">Bucket <br> List</H3>
+                <H3 class="heading2">Bucket <br> List</H3>
                
             </div>
             {{> navbar}}
@@ -68,5 +89,6 @@
         {{> footer}}
     </div>
     <script src="/static/js/Main.js"></script>
+    <script src="/static/js/data.js"></script>
 </body>
 </html>

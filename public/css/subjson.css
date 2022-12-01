@@ -1,0 +1,87 @@
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    left: 0;
+    padding: 0 4%;
+    background-color: transparent;
+    z-index: 9;
+    display: flex;
+    transition: background-color .5s ease-out;
+    align-items: center;
+    color: black;
+}
+
+.navbar-scroll {
+    background-color: rgb(255, 255, 255);
+    /* background: linear-gradient(to right, white black); */
+    /* background-image: linear-gradient(to right, white black); */
+    color: rgb(182, 145, 72);
+}
+
+.brand-logo{
+    height: 150px;
+    margin-top: -70px;
+    filter: drop-shadow(19px, 19px, 14px);
+}
+
+.nav-links{
+    margin-top: 1px;
+    display: flex;
+    list-style: none;
+    margin-left: 10%;
+}
+
+.nav-items .dropcont {
+    text-decoration: none;
+    font-size: 22px;
+    /* text-align: center;
+    margin-left: 130px;
+    text-transform: capitalize;
+    text-transform: uppercase;
+    /* color: black; */
+    color: inherit; 
+    font-family: 'Jost', sans-serif;
+    opacity: 0.9;
+    font-weight: bold;
+}
+
+.cont{
+    color: white;
+    text-decoration: none;
+}
+
+.right-container{
+    display: block;
+    margin-left: 10%;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+.search-box{
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    outline: none;
+    height: 30px;
+    color: black;
+    width: 220px;
+    border-color: black;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.search-box:focus{
+    width: 300px;
+    font-weight: 700;
+    color: black;
+    border-color: black;
+    
+}

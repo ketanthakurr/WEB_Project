@@ -1,6 +1,6 @@
-const mongoose = require ('mongoose');
+const mongoose = require('mongoose')
 
-const dataSchema = new mongoose.Schema({
+let schema = new mongoose.Schema({
     name : {
         type:String,
         required: true
@@ -17,6 +17,5 @@ const dataSchema = new mongoose.Schema({
     }
 })
 
-const Register = new mongoose.model("SubData",dataSchema);
-
-module.exports = Register;
+let entry = new mongoose.model("subscribe",schema)
+module.exports = entry

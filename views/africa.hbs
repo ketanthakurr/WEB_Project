@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introductory Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap" rel="stylesheet" />
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <div class="image"></div>
+
+    <script>
+      async function africa() {
+        let request = new Request("/static/africa.json");
+        let response = await fetch(request);
+        let json_obj = await response.json();
+
+        loadImg(json_obj);
+        loadtext(json_obj);
+        loadimage(json_obj);
+        loadtext1(json_obj);
+       
+    }
+
+      let div1 = document.querySelector(".image");
+
+      function loadImg(africa) {
+        let img = document.createElement("img");
+        img.src = africa["image"];
+        img.style.position = "fixed";
+        img.style.left = "0";
+        img.style.top = "0px";
+        img.style.width = "100%";
+        img.style.height = "40rem";
+        img.style.filter = "saturate(1.4)";
+        img.style.backgroundPosition = "center center";
+        img.style.backgroundAttachment = "fixed";
+        div1.appendChild(img);
+        }
+      function loadtext(africa) {
+        let text1 = document.
+      }
+
+
+      africa();
+      
+    </script>
+  </body>
+</html>

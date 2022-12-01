@@ -8,7 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/static/css/subjson.css">
     <style>
+    
       * {
         margin: 0;
         padding: 0;
@@ -118,7 +120,7 @@
     </div>
 
     <div class="main">
-      <form action="/subscribe" method="post">
+      <form action="/subjson" method="post">
       <img src="/static/images/logofinal.png" class="logo" alt="">
       <input type="text" class="box" name="name" id="name" placeholder="Name" required/><br>
       <input type="text" class="box" name="phone" id="phone" placeholder="Phone Number" required/><br>
@@ -135,14 +137,13 @@
         let json_obj = await response.json();
 
         loadImg(json_obj);
-        loadButton2(json_obj);
     }
     
       let div1 = document.querySelector(".background-image");
 
-      function loadImg(bts_json_obj) {
+      function loadImg(subPage) {
         let img = document.createElement("img");
-        img.src = bts_json_obj["image"];
+        img.src = subPage["image"];
         img.style.position = "fixed";
         img.style.left = "0";
         img.style.top = "0px";
@@ -156,7 +157,6 @@
         img.style.backgroundSize = "cover";
         div1.appendChild(img);
     }
-
 
       loadIntroPage();
     </script>
